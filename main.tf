@@ -2,7 +2,7 @@
 
 module "services_webserver" {
   source  = "app.terraform.io/mm-orcd/services/aws//modules/webserver"
-  version = "0.0.2"
+  version = "0.0.3"
   aws_region = var.aws_region
   aws_zone = var.aws_zone
   cidr_block = var.cidr_block
