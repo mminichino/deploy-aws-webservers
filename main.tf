@@ -11,3 +11,8 @@ module "services_webserver" {
   ssh_private_key = var.ssh_private_key
   subnet_block = var.subnet_block
 }
+
+module "use_cloud" {
+  source = "./modules/config"
+  count  = var.is_cloud ? 1 : 0
+}

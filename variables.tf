@@ -27,3 +27,8 @@ variable "cidr_block" {
 variable "subnet_block" {
   description = "Subnet CIDR"
 }
+
+variable "is_cloud" {
+  description = "Terraform Cloud CLI"
+  default     = false
+}
